@@ -1,6 +1,6 @@
 //names and inputs
 
-let hacker1 = "Devin";
+let hacker1 = "Gabbie";
 console.log(`The drivers name is ${hacker1}`);
 
 let hacker2 = "Widowmaker";
@@ -65,6 +65,17 @@ const ipsum = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed phar
 Nam sed molestie ipsum, in dictum lacus. Aenean ante diam, porta et consectetur ac, ornare eu nisi. Mauris eu lacinia purus. Aenean fringilla convallis nulla id venenatis. Phasellus quis ipsum ligula. Donec a ipsum ut tellus aliquam ullamcorper sed tristique magna. Proin malesuada felis nec ante pharetra egestas. Donec purus dui, tincidunt vel velit suscipit, placerat suscipit ligula.
 
 In hac habitasse platea dictumst. Etiam efficitur nulla iaculis dui faucibus accumsan. Mauris imperdiet commodo ipsum sed vestibulum. Vivamus arcu odio, vulputate in luctus nec, viverra ac felis. Proin quis orci sed ex tincidunt consectetur. Suspendisse hendrerit sit amet purus quis consectetur. Nulla faucibus condimentum leo et laoreet. Integer finibus orci et mi vehicula, at aliquam neque ultricies.`
-// number of words. A lot of split action :)
-console.log(ipsum.split(' ').length);
+//Number of words. A lot of split action going on :)
+let numberOfWords = ipsum.split(' ')
+console.log(`number of words is ${numberOfWords.length}`);
 
+const paragraphArray = ipsum.split(' ');
+
+let etCount = 0;
+
+paragraphArray.forEach(x => {
+    if (x == 'et') {
+        etCount++
+    }
+})
+console.log(`The number of et is ${etCount}`)
