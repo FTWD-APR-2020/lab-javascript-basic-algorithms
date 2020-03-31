@@ -1,4 +1,39 @@
 
+*{
+    transition:all 2s;
+}
+
 body{
-    background-color:magenta;
+    background-image: url('./images/download-2.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+section h3{
+    font-size: 20px;
+    color: blue;
+}
+
+h2, h4 {
+    color:green;
+    font-size:10px
+}
+
+.paragraph {
+    color:purple;
+    font-size: 30px;
+}
+
+
+
+nav#navbar.navigation.brie{
+    background: pink;
+    background: #3b99ff;
+    padding: 50px;
+    transform: rotateZ(645deg);
+}
+
+nav {
+    background:black;
+    color: white;
 }
