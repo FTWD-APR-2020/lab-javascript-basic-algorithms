@@ -1,7 +1,7 @@
 //names and inputs
 
 let hacker1 = "Gabbie";
-console.log(`The drivers name is ${hacker1}`);
+console.log(`The driver's name is ${hacker1}`);
 
 let hacker2 = "Widowmaker";
 console.log(`The navigators name is ${hacker2}`);
