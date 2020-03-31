@@ -5,7 +5,7 @@ console.log(`"The driver's name is ${hacker1}"`);
 
 // 1.2
 let hacker2 = 'Jimmy';
-console.log(`"The navigator's name is ${hacker1}"`);
+console.log(`"The navigator's name is ${hacker2}"`);
 
 // Iteration 2: Conditionals
 
@@ -76,4 +76,9 @@ console.log(counterEt);
 
 // Bonus #2
 
+let phrasetoCheck = "A man, a plan, a canal, Panama!";
+phrasetoCheck = phrasetoCheck.replace(/[^\w]/g, '').toLocaleLowerCase();
 
+let reversePhrase = phrasetoCheck.split('').reverse().join('');
+
+console.log(phrasetoCheck === reversePhrase);
