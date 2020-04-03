@@ -68,5 +68,5 @@ function palindrome(str) {
     return true;
   }
   
-  console.log(palindrome("step on no pets"))
+  console.log(palindrome("step on, no pets"))
   
