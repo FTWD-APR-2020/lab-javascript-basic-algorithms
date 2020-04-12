@@ -1,72 +1,61 @@
-// Iteration 1: Names and Input
-let hacker1 = "Kate"
+let hacker1 = "Leo"
 console.log(`The drivers name is ${hacker1}`);
- 
-let hacker2 = "Chris"
-console.log(`The navigators name is ${hacker2}`)
 
-let driver = hacker1
+let hacker2 = "Marc"
+console.log(`The navigators name is ${hacker2}`);
 
-let navigator = hacker2
-// Iteration 2: Conditionals
-
- if(hacker1.length > hacker2.length){
-         console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
-         
-} else if(hacker1.length < hacker2.length){
-        console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters`)
-      
+if(hacker1.length > hacker2.length){
+  console.log(`The driver has the longest name, it has ${hacker1.length} characters.`);
+} else if ( hacker1.length < hacker2.length){
+  console.log(`It seems that the navigator has the longest name, it has ${hacker2.length} characters.`)
 } else {
-        console.log(`Wow, you both have equally long names, ${hacker1.length} characters!`)
-      
+  console.log (`Wow, you both have equally long names, ${hacker2.length} characters!`)
 }
 
+console.log(hacker1.split('').join(' ').toUpperCase())
+console.log(hacker2.split('').reverse().join(''))
 
-
-// Iteration 3: Loops
-console.log(driver.toUpperCase().split('').join(' '))
-console.log(driver.split('').reverse('').join(''))
-
-
-const a = "chris" // with accents, lowercase
-const b = "kate" // no accents, uppercase
-
-
-if (driver.localeCompare(navigator) == -1){
-  console.log("The driver's name goes first.");
-
-} else if(driver.localeCompare(navigator) == 1){
+if(hacker1 < hacker2){
+  console.log("The driver's name goes first.")
+} else if(hacker1 > hacker2){
   console.log("Yo, the navigator goes first definitely.")
-  
 } else {
-  console.log("What?! You both have the same name?");
-  
+  console.log("What?! You both have the same name?")
 }
 
- 
-// Bonus 1
+let lorem = `
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi aliquet consectetur ultrices. Duis cursus, sapien non elementum ullamcorper, magna nulla sollicitudin velit, sit amet scelerisque magna nibh eu purus. Phasellus ultricies condimentum neque ac porttitor. Phasellus vitae efficitur urna. In sagittis interdum metus sed vestibulum. Integer tellus sem, elementum non semper at, sagittis at ipsum. Nullam condimentum auctor ipsum, at imperdiet nisi ornare id. Sed tincidunt venenatis felis eget commodo.
 
-let paragraphs = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sagittis facilisis sapien non iaculis. Nullam nisl lectus, eleifend tincidunt magna id, varius rutrum nulla. Sed pretium elit non leo facilisis convallis. Suspendisse quis bibendum augue. Vivamus in ornare tortor. Maecenas nibh tortor, egestas ut neque et, facilisis luctus diam. Maecenas consequat quam ac purus aliquet, ut tincidunt justo consectetur. Donec gravida faucibus nulla. Nullam malesuada vel orci vitae dapibus. Etiam et velit augue. Etiam vel dapibus eros, at sagittis orci. Mauris purus ante, cursus quis fringilla vitae, venenatis ut lectus. Maecenas sed iaculis nisl. Pellentesque elementum, sapien a tincidunt eleifend, est lacus ultricies purus, eu finibus mi nibh eu nulla. Quisque elementum, tellus in posuere eleifend, sem erat tincidunt leo, id rhoncus turpis sapien ac nisi. Etiam elementum, nibh non eleifend accumsan, augue diam suscipit est, a consectetur dui tellus non metus. Quisque eget nunc massa. Praesent viverra pharetra nisi ac laoreet. Etiam quis elementum mi, et eleifend risus. In nec sapien quis dui commodo pellentesque in in lectus. Nullam consectetur risus quis lorem blandit, sit amet iaculis magna eleifend. Ut sit amet tellus consequat, tristique purus a, sollicitudin diam. Integer ut est et purus pharetra dictum id a nisl. Aenean vel vulputate ante. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Nulla posuere quam leo, et consequat est congue sed. Cras aliquam augue sem, sit amet sodales eros scelerisque non. Donec in ex bibendum, vestibulum erat et, condimentum lacus. Curabitur elementum ligula mauris, ut egestas augue varius sit amet. Aliquam tincidunt, augue sed lobortis mollis, enim nibh sagittis diam, a tempor dolor sem vitae elit. Vivamus aliquet, urna et convallis tincidunt, augue tortor hendrerit libero, et ultricies tellus odio eget massa."
+Integer facilisis, magna eget condimentum lacinia, odio lacus convallis nisl, vitae tincidunt tellus massa sed sem. Pellentesque tincidunt velit commodo, hendrerit augue a, lobortis neque. Fusce convallis a libero non ultricies. Phasellus semper, ipsum ut semper iaculis, diam tortor tempus nisi, ac ultrices justo erat et nunc. Suspendisse id dui ut arcu maximus tempor vitae sit amet ligula. In euismod dictum orci id interdum. Integer suscipit ligula at nibh vulputate feugiat. Pellentesque tincidunt mauris a iaculis congue. Mauris placerat, dolor eu luctus laoreet, erat ipsum laoreet tortor, ut ullamcorper neque nibh ac mauris. Pellentesque malesuada aliquam mauris nec consequat. Quisque vitae dignissim mauris. Proin malesuada, nulla ac auctor ultrices, elit metus vulputate massa, eget posuere erat turpis sit amet enim. Morbi faucibus at mi quis aliquam. Quisque id erat erat. Nam malesuada ante ac suscipit laoreet. Nunc sollicitudin orci quis blandit sodales.
 
-function WordCount(str) { 
-  return str.split(" ").length;
-}
+Suspendisse pulvinar turpis sapien, vel venenatis nunc congue non. Cras mollis ut sem vitae posuere. Nam faucibus libero quis lectus vehicula molestie. Ut et leo eu lectus pellentesque pellentesque. In pretium placerat faucibus. Etiam et risus eget erat mattis consequat. Ut congue ipsum nisi, vitae euismod nunc accumsan non. Nulla ac venenatis tortor, eu pulvinar nisi. Etiam sollicitudin enim lorem, vel sodales quam rhoncus vel. Donec tincidunt elementum nisi, in condimentum purus maximus a. Donec posuere varius est, nec tempus nunc vulputate id. Aliquam tincidunt sollicitudin hendrerit.
 
-console.log(WordCount(paragraphs));
+`
 
+console.log(lorem.split(' ').length)
 
-var count = (paragraphs.match(/et/g) || []).length;
-console.log(count);
-
-// Bonus 2
-
-function palindrome(str) {
-    var len = Math.floor(str.length / 2);
-    for (var i = 0; i < len; i++)
-      if (str[i] !== str[str.length - i - 1])
-        return false;
-    return true;
+function countWord (word, paragraph){
+  let arrayPar = paragraph.split(' ')
+  newArray = []
+for (let i = 0; i < arrayPar.length; i++){
+  if(arrayPar[i].includes(word)){
+  newArray.push(arrayPar[i])
   }
-  
-  console.log(palindrome("step on, no pets"))
-  
+}
+console.log(`The word ${word} appears ${newArray.length} times.`)
+}
+
+countWord('et', lorem)
+
+phrase = "Racecar"
+
+function phraseToCheck(phrase){
+  console.log(phrase.toLowerCase().split('').reverse().join('')=== phrase.toLowerCase())
+}
+
+phraseToCheck("Racecar")
+
+
+
+
+
